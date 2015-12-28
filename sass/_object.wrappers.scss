@@ -1,11 +1,27 @@
 .wrapper--header{
-	width:1540px;
-	margin:0px auto 70px;
-	padding-top:50px;
+	width:91.666666666667%; /*1540/1680*/
+	margin:0px auto 3.88888888888889em; /*70/18*/
+	padding-top:2.77777777777778em; /*50/18*/
 }
 
 .wrapper--signup{
 	width: 450px;
-	padding:60px 70px;
+	padding:3.33333333333333em 70px; /*60/18* 70/1680*/
 	margin:0px auto;
+}
+
+@media(min-width:0px) and (max-width:550px){
+
+
+.wrapper--signup{
+	width: 100%;
+	padding:2em 10%;
+}
+
+.wrapper--header{
+	margin:0px auto 7em; /*70/18*/
+}
+
+
+
 }

@@ -4,11 +4,21 @@
 	display: inline-block;
 
 	&+&{
-		margin-left:35px;
+		margin-left:1.94444444444444em; /*35/18*/
 	}
 
 	&:hover{
 		opacity: 1;
 	}
+
+}
+
+@media(min-width:0px) and (max-width:550px){
+
+
+.icon{
+	width:2.5em;
+}
+
 
 }

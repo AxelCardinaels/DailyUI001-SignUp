@@ -1,7 +1,7 @@
 .signup-container{
 	background: rgba(white,0.15);
 	border: 2px solid rgba(white,0.4);
-	margin-top: 35px;
+	margin-top: 1.94444444444444em; /*35/18*/
 	text-align: center;
 }
 
@@ -12,20 +12,21 @@
 	padding-bottom:3px;
 
 	&+&{
-		margin-top: 40px;
+		margin-top: 2.22222222222222em; /*40/18*/
 	}
 }
 
 .signup__send{
+	font-weight: 100;
+	font-size: 1.11111111111111em; /*20/18*/
 	background: rgba($color-button,0.55);
 	border: none;
 	width: 100%;
-	margin:70px 0px 60px;
+	margin:3.5em 0px 3em; /*70/20 60/20*/
 	padding: 5px 0px;
 	color:white;
 	border-radius: 4px;
-	font-weight: 100;
-	font-size: 20px;
+	
 	@include transition_css(all,0.25s,ease-in-out,0s);
 
 	&:hover{
@@ -34,7 +35,37 @@
 }
 
 .others__title{
-	margin-bottom:25px;
+	font-size: 1.22222222222222em; /*22/18*/
+	margin-bottom:1.13636363636364em; /*25/22*/
 	color:$color-grey-darker;
-	font-size: 22px;
+	
+}
+
+@media(min-width:551px) and (max-width:700px){
+
+
+
+
+}
+
+
+@media(min-width:0px) and (max-width:550px){
+
+
+.signup-container{
+	background: transparent;
+	border: none;
+
+}
+
+.signup__send{
+	font-size: 0.95em; /*20/18*/
+
+}
+
+.signup__input{
+	font-size: 0.9em;
+
+}
+
 }
