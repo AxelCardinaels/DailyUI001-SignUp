@@ -85,7 +85,8 @@ input, textarea, form {
   font-family: inherit;
   font-size: inherit;
   outline: none;
-  border: transparent; }
+  border: transparent;
+  background: transparent; }
 
 textarea {
   resize: vertical; }
@@ -510,9 +511,32 @@ html {
  * #BASE
  */
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   line-height: 1.6;
   font-size: 18px; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background: url("../img/backgroundsu.jpg") no-repeat center bottom;
+  background-size: cover;
+  -webkit-background-size: cover; }
+
+h1 {
+  font-size: 55px; }
+  h1 + h2 {
+    margin-top: 10px; }
+
+h2 {
+  font-size: 30px; }
+
+h1, h2 {
+  color: #C1C1C1;
+  font-weight: 100;
+  text-align: center;
+  line-height: 1; }
 
 a {
   text-decoration: none; }
@@ -533,9 +557,88 @@ a {
   .list-inline > li {
     display: inline-block; }
 
+.wrapper--header {
+  width: 1540px;
+  margin: 0px auto 70px;
+  padding-top: 50px; }
+
+.wrapper--signup {
+  width: 450px;
+  padding: 60px 70px;
+  margin: 0px auto; }
+
+.icon {
+  opacity: 0.75;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  display: inline-block; }
+  .icon + .icon {
+    margin-left: 35px; }
+  .icon:hover {
+    opacity: 1; }
+
 /**
  * #COMPONENTS
  */
+.header {
+  position: relative; }
+
+.header__go-back {
+  color: #C1C1C1;
+  font-size: 22px;
+  font-weight: 100;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+  .header__go-back:hover {
+    color: #6f6f6f; }
+
+.header__burger {
+  float: right;
+  width: 25px; }
+
+.signup-container {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-top: 35px;
+  text-align: center; }
+
+.signup__input {
+  width: 100%;
+  color: #A2A2A2;
+  border-bottom: 1px solid #C7C7C7;
+  padding-bottom: 3px; }
+  .signup__input + .signup__input {
+    margin-top: 40px; }
+
+.signup__send {
+  background: rgba(0, 162, 88, 0.55);
+  border: none;
+  width: 100%;
+  margin: 70px 0px 60px;
+  padding: 5px 0px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 100;
+  font-size: 20px;
+  -moz-transition: all 0.25s ease-in-out 0s;
+  -ms-transition: all 0.25s ease-in-out 0s;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s; }
+  .signup__send:hover {
+    background: rgba(0, 162, 88, 0.8); }
+
+.others__title {
+  margin-bottom: 25px;
+  color: #A2A2A2;
+  font-size: 22px; }
+
 /**
  * #TRUMPS
  */

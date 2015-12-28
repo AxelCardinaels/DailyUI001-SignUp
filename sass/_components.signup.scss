@@ -1,0 +1,40 @@
+.signup-container{
+	background: rgba(white,0.15);
+	border: 2px solid rgba(white,0.4);
+	margin-top: 35px;
+	text-align: center;
+}
+
+.signup__input{
+	width: 100%;
+	color:$color-grey-darker;
+	border-bottom:1px solid $color-border;
+	padding-bottom:3px;
+
+	&+&{
+		margin-top: 40px;
+	}
+}
+
+.signup__send{
+	background: rgba($color-button,0.55);
+	border: none;
+	width: 100%;
+	margin:70px 0px 60px;
+	padding: 5px 0px;
+	color:white;
+	border-radius: 4px;
+	font-weight: 100;
+	font-size: 20px;
+	@include transition_css(all,0.25s,ease-in-out,0s);
+
+	&:hover{
+		background: rgba($color-button,0.80);
+	}
+}
+
+.others__title{
+	margin-bottom:25px;
+	color:$color-grey-darker;
+	font-size: 22px;
+}

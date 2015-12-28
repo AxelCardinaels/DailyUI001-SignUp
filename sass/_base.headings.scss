@@ -1,0 +1,21 @@
+h1{
+
+	font-size: 55px;
+
+	&+h2{
+		margin-top:10px;
+	}
+}
+
+h2{
+
+	font-size: 30px;
+	
+}
+
+h1,h2{
+	color:$color-grey-light;
+		font-weight: 100;
+	text-align: center;
+	line-height: 1;
+}

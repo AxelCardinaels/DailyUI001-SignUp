@@ -1,0 +1,22 @@
+.header{
+	position: relative;
+}
+
+.header__go-back{
+	color:$color-grey-light;
+	font-size: 22px;
+	font-weight: 100;
+	position: absolute;
+	top:30px;
+	left:0px;
+	@include transition_css(all,0.2s,ease-in-out,0s);
+
+	&:hover{
+		color:darken($color-grey-darker,20%);
+	}
+}
+
+.header__burger{
+	float: right;
+	width:25px;
+}

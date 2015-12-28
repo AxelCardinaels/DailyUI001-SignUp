@@ -1,0 +1,14 @@
+.icon{
+	opacity: 0.75;
+	@include transition_css(all,0.3s,ease-in-out,0s);
+	display: inline-block;
+
+	&+&{
+		margin-left:35px;
+	}
+
+	&:hover{
+		opacity: 1;
+	}
+
+}
